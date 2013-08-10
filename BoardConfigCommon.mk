@@ -22,6 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/qsd8k-common/overlay
 
 TARGET_NO_BOOTLOADER := true
 
+BOARD_VENDOR := htc
+
 # QSD8250
 TARGET_BOARD_PLATFORM := qsd8k
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
