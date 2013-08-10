@@ -32,7 +32,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a8
-ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Scorpion
 TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
@@ -103,8 +102,6 @@ BOARD_NO_BFRAMES := true
 # Kernel directory
 TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 BUILD_KERNEL := true
-
-#BOARD_USES_LEGACY_CAMERA := true
 
 # Override kernel toolchain. (4.6 is too unstable)
 KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
