@@ -41,22 +41,31 @@ PRODUCT_PACKAGES += \
     audio.primary.qsd8k \
     audio_policy.qsd8k
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.qsd8k
-
 # Display
 PRODUCT_PACKAGES += \
     copybit.qsd8k \
     gralloc.qsd8k \
-    hwcomposer.qsd8k
-
-# Omx
+    hwcomposer.qsd8k \
+    libgenlock \
+    libmemalloc \
+    liboverlay \
+    libqdutils \
+    libtilerenderer
+    
+# OMX
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libdivxdrmdecrypt \
+    libmm-omxcore \
     libOmxCore \
     libOmxVdec \
-    libstagefrighthw
-#    libOmxVidEnc \
+    libOmxVenc \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libstagefrighthw \
+    libOmxQcelp13Enc \
+    libOmxEvrcEnc \
+    libOmxAmrEnc
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
