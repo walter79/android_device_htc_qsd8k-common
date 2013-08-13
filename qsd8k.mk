@@ -45,12 +45,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     copybit.qsd8k \
     gralloc.qsd8k \
-    hwcomposer.qsd8k \
-    libgenlock \
-    libmemalloc \
-    liboverlay \
-    libqdutils \
-    libtilerenderer
+    hwcomposer.qsd8k
+
+#    libgenlock \
+#    libmemalloc \
+#    liboverlay \
+#    libqdutils \
+#    libtilerenderer
     
 # OMX
 PRODUCT_PACKAGES += \
@@ -59,7 +60,6 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore \
     libOmxVdec \
-    libOmxVenc \
     libOmxAacEnc \
     libOmxAmrEnc \
     libstagefrighthw \
