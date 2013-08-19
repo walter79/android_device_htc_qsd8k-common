@@ -23,6 +23,12 @@ LOCAL_C_INCLUDES       := frameworks/base/services \
                           hardware/libhardware/include \
                           hardware/qcom/display-legacy/libgralloc
 
+#Hack to link libcamera
+LOCAL_LDFLAGS          := -Wl,--no-fatal-warnings
+
+LOCAL_C_INCLUDES              += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+
 LOCAL_PRELINK_MODULE   := false
 
 include $(BUILD_SHARED_LIBRARY)
