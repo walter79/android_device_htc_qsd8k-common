@@ -41,31 +41,22 @@ PRODUCT_PACKAGES += \
     audio.primary.qsd8k \
     audio_policy.qsd8k
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.qsd8k
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.qsd8k \
     gralloc.qsd8k \
     hwcomposer.qsd8k
 
-#    libgenlock \
-#    libmemalloc \
-#    liboverlay \
-#    libqdutils \
-#    libtilerenderer
-    
-# OMX
+# Omx
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libdivxdrmdecrypt \
-    libmm-omxcore \
     libOmxCore \
     libOmxVdec \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libstagefrighthw \
-    libOmxQcelp13Enc \
-    libOmxEvrcEnc \
-    libOmxAmrEnc
+    libstagefrighthw
+#    libOmxVidEnc \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -96,6 +87,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     dalvik.vm.dexopt-flags=m=y \
+    ro.sys.fw.bg_apps_limit=12 \
     dalvik.vm.checkjni=false
 
 # Default heap settings for 512mb device
