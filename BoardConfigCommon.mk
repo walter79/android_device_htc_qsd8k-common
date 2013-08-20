@@ -70,6 +70,8 @@ BOARD_BLUEDROID_VENDOR_CONF := device/htc/qsd8k-common/bluetooth/vnd_qsd8k.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/qsd8k-common/bluetooth/include
 
 # Qcom
+BOARD_USES_QCOM_HARDWARE := true
+COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 TARGET_QCOM_DISPLAY_VARIANT := legacy
 TARGET_QCOM_AUDIO_VARIANT := legacy
 TARGET_QCOM_GPS_VARIANT := legacy
