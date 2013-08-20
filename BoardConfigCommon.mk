@@ -39,7 +39,7 @@ TARGET_CPU_VARIANT := cortex-a8
 TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
 
 # Headers
-TARGET_SPECIFIC_HEADER_PATH := device/htc/qsd8k-common/include
+TARGET_SPECIFIC_HEADER_PATH := out/target/product/leo/obj/KERNEL_OBJ/usr/include
 
 # Wifi
 WIFI_BAND                        := 802_11_ABG
