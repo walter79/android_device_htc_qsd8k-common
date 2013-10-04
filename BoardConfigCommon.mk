@@ -66,10 +66,10 @@ BOARD_USES_GENERIC_AUDIO := false
 BOARD_VENDOR_USE_AKMD := akm8973
 
 # Bluetooth
-#BOARD_HAVE_BLUETOOTH := true
-#BOARD_HAVE_BLUETOOTH_BCM := true
-#BOARD_BLUEDROID_VENDOR_CONF := device/htc/qsd8k-common/bluetooth/vnd_qsd8k.txt
-#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/qsd8k-common/bluetooth/include
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/qsd8k-common/bluetooth/vnd_qsd8k.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/qsd8k-common/bluetooth/include
 
 # Qcom
 BOARD_USES_QCOM_HARDWARE := true
