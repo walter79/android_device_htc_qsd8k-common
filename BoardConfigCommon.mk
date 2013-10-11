@@ -101,3 +101,5 @@ BOARD_NO_BFRAMES := true
 # Kernel directory
 TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 BUILD_KERNEL := true
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+
