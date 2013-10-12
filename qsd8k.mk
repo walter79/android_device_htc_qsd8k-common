@@ -43,13 +43,13 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.qsd8k
+    #camera.qsd8k
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.qsd8k \
-    gralloc.qsd8k \
-    hwcomposer.qsd8k
+    #copybit.qsd8k \
+    #gralloc.qsd8k \
+    #hwcomposer.qsd8k
 
 # Omx
 PRODUCT_PACKAGES += \
